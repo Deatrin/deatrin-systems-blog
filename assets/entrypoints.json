@@ -1,0 +1,39 @@
+{
+  "entrypoints": {
+    "js/app": {
+      "js": [
+        "/assets/js/app.js"
+      ]
+    },
+    "js/prism": {
+      "js": [
+        "/assets/js/prism.js"
+      ]
+    },
+    "js/lightbox": {
+      "js": [
+        "/assets/js/lightbox.js"
+      ]
+    },
+    "js/termynal": {
+      "js": [
+        "/assets/js/termynal.js"
+      ]
+    },
+    "css/app": {
+      "css": [
+        "/assets/css/app.css"
+      ]
+    },
+    "css/lightbox": {
+      "css": [
+        "/assets/css/lightbox.css"
+      ]
+    },
+    "css/prism-dracula": {
+      "css": [
+        "/assets/css/prism-dracula.css"
+      ]
+    }
+  }
+}
