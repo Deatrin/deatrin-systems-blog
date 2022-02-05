@@ -18,7 +18,7 @@
         <a class="nothing">&laquo; Prev</a> {% endif %}
         {% for page in (start_range..end_range) %} 
             {% if page == paginator.page %}
-                <a class="active drac-text-cyan">{{ page }}</em>
+                <a class="active drac-text-pink-purple">{{ page }}</em>
             {% elsif page == 1 %}
                 <a href="/">{{ page }}</a> {% else %}
                 <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a> 
