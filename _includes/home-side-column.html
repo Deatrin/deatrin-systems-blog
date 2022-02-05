@@ -1,0 +1,19 @@
+<!-- Right column -->
+<div class="hidden lg:block grid grid-cols-1 gap-4">
+    <section aria-labelledby="side-panel-title">
+        <h2 class="sr-only" id="side-panel-title">Side Panel</h2>
+        <div class="main-overlay drac-bg-black rounded-lg shadow-2xl mb-8 overflow-hidden">
+            <div class="p-6">
+                {%- include post-by-year.html -%}
+            </div>
+            <hr class="drac-divider drac-border-purple" />
+            <div class="p-6">
+                {%- include post-by-cat.html -%}
+            </div>
+        </div>
+        <div class="main-overlay overflow-hidden">
+            <div class="p-4">
+            </div>
+        </div>
+    </section>
+</div>

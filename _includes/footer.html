@@ -1,0 +1,43 @@
+<script src="{% link /assets/js/app.js %}"></script>
+<script src="{% link /assets/js/prism.js %}"></script>
+<script type="text/javascript" src="{%link /assets/js/lightbox.js %}"></script>
+<link rel="stylesheet" href="{%link /assets/css/lightbox.css %}">
+</div>
+<div>
+    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 220" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+            <stop stop-color="rgba(20, 20, 27, 1)" offset="0%"></stop>
+            <stop stop-color="rgba(33, 34, 44, 1)" offset="100%"></stop>
+          </linearGradient>
+        </defs>
+        <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,198L20,183.3C40,169,80,139,120,121C160,103,200,95,240,91.7C280,88,320,88,360,77C400,66,440,44,480,29.3C520,15,560,7,600,3.7C640,0,680,0,720,33C760,66,800,132,840,150.3C880,169,920,139,960,135.7C1000,132,1040,154,1080,135.7C1120,117,1160,59,1200,55C1240,51,1280,103,1320,121C1360,139,1400,125,1440,113.7C1480,103,1520,95,1560,106.3C1600,117,1640,147,1680,161.3C1720,176,1760,176,1800,179.7C1840,183,1880,191,1920,165C1960,139,2000,81,2040,55C2080,29,2120,37,2160,62.3C2200,88,2240,132,2280,128.3C2320,125,2360,73,2400,47.7C2440,22,2480,22,2520,33C2560,44,2600,66,2640,95.3C2680,125,2720,161,2760,176C2800,191,2840,183,2860,179.7L2880,176L2880,220L2860,220C2840,220,2800,220,2760,220C2720,220,2680,220,2640,220C2600,220,2560,220,2520,220C2480,220,2440,220,2400,220C2360,220,2320,220,2280,220C2240,220,2200,220,2160,220C2120,220,2080,220,2040,220C2000,220,1960,220,1920,220C1880,220,1840,220,1800,220C1760,220,1720,220,1680,220C1640,220,1600,220,1560,220C1520,220,1480,220,1440,220C1400,220,1360,220,1320,220C1280,220,1240,220,1200,220C1160,220,1120,220,1080,220C1040,220,1000,220,960,220C920,220,880,220,840,220C800,220,760,220,720,220C680,220,640,220,600,220C560,220,520,220,480,220C440,220,400,220,360,220C320,220,280,220,240,220C200,220,160,220,120,220C80,220,40,220,20,220L0,220Z"></path>
+      </svg>
+    <footer class="main-overlay drac-bg-blackBlack flex flex-wrap items-center justify-between p-3 m-auto">
+        <div class="container mx-auto flex flex-col flex-wrap items-center justify-between">
+            <div class="flex mx-auto drac-text-white text-center">
+                <span>
+                    <p class="drac-text-pink-purple">
+                        {{ site.title }} © {{ site.time | date: '%Y' }}
+                    </p>
+                </span>
+            </div>
+            <div class="flex mx-auto drac-text-white text-center">
+                <span>
+                    <p>
+                        made by
+                        <a href="https://github.com/Deatrin" target="_blank" class="drac-text-pink">
+                            Drew
+                        </a>
+                        with
+                        <a href="https://github.com/Deatrin/deatrin-systems-blog" target="_blank"
+                            class="drac-text-pink-purple">
+                            code, beer, & tears
+                        </a>
+                        🍻
+                    </p>
+                </span>
+            </div>
+        </div>
+    </footer>
+</div>

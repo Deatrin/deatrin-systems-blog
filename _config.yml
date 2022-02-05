@@ -1,0 +1,70 @@
+title: deatrin-systems-blog
+description: My adventure into various systems
+permalink: /:year/:month/:day/:title/
+github_username: Deatin
+url: https://deatrin.com
+
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll/tagging
+  - jekyll-tagging-related_posts
+  - jekyll-archives
+
+paginate: 5
+paginate_pat: "/page:num"
+
+
+date_format: "%-d %b"
+post_date_format: "%b %-d, %Y"
+exerpt_separator: <!---more--->
+markdown: kramdown
+theme: minima
+
+jekyll_compose:
+  default_front_matter:
+    drafts:
+      id: 000
+      author: Drew
+      views: 0
+      image:
+      published: false
+      sitemap: false
+      categories:
+        - PowerShell
+      tags:
+        - PowerShell
+    posts:
+      id: 000
+      author: Drew
+      views: 0
+      image:
+      categories:
+        - PowerShell
+      tags:
+        - PowerShell
+
+jekyll-archives:
+  enabled:
+    - year
+    - month
+    - categories
+  layouts:
+    year: archive-years
+    month: archive-months
+    category: archive-categories
+  permalinks:
+    year: 'year/:year/'
+    category: '/category/:name/'
+
+include:
+  - node_modules
+
+exclude:
+  - "package*.json"
+  - "*.config.js"
+  - netlify.toml
+  - README.md
+  - LICENSE
+  - Makefile
