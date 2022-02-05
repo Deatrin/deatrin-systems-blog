@@ -1,0 +1,136 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Jekyll: Build Dev",
+            "detail": "bundle install && npm install && npm run dev && npm start",
+            "type": "shell",
+            "linux":{
+                "command": "bundle install && npm install && npm run dev && npm start"
+            },
+            "group":{
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher":["$eslint-stylish","$jekyll-error-watch", "$jekyll-warning-watch"]
+        },
+        {
+            "label": "Jekyll: Build prod",
+            "detail": "bundle install && npm install && npm run prod && npm start",
+            "type": "shell",
+            "linux":{
+                "command": "bundle install && npm install && npm run prod && npm start"
+            },
+            "group":{
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher":["$eslint-stylish","$jekyll-error-watch", "$jekyll-warning-watch"]
+        },
+        {
+            "label": "New Post",
+            "detail": "jekyll compose \"Insert Title Here\"",
+            "type": "shell",
+            "command": [
+                "bundle exec jekyll compose \"${input:Title}\""
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            
+            "problemMatcher": []
+        },
+        {
+            "label": "Draft Post",
+            "detail": "jekyll draft \"Insert Title Here\"",
+            "type": "shell",
+            "command": [
+                "bundle exec jekyll draft \"${input:Title}\""
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Rename Draft",
+            "detail": "jekyll rename _drafts/\"insert Draft\" new name",
+            "type": "shell",
+            "command": [
+                "bundle exec jekyll rename _drafts/\"${input:Draft}\" \"${input:Title}\""
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Post From Drafts",
+            "detail": "jekyll publish _drafts/\"insert Draft\"",
+            "type": "shell",
+            "command": [
+                "bundle exec jekyll publish _drafts/\"${input:Draft}\""
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+        {
+            "description": "Whats the title of the post",
+          "id": "Title",
+          "type": "promptString",
+          "default": "Something cool with PowerShell"
+        },
+        {
+            "description": "Whats the title of the draft",
+          "id": "Draft",
+          "type": "promptString",
+          "default": "Some Draft Name"
+        }
+      ]
+}

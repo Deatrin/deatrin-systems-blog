@@ -1,0 +1,12 @@
+/_site
+/.bundle
+/node_modules
+/vendor
+/assets/*
+!assets/images
+
+.jekyll-cache
+.eslintcache
+.env.local
+.npmrc
+.DS_Store
