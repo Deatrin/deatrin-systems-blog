@@ -15,7 +15,7 @@
     "dependencies": {
         "@dracula/dracula-ui": "^0.8.1 ",
         "@duckdoc/termynal": "^1.0.0",
-        "alpinejs": "^3.9.5",
+        "alpinejs": "^3.9.6",
         "github-markdown-dracula-css": "^4.0.3",
         "jquery": "^3.6.0",
         "nightwind": "^1.1.11",
@@ -36,7 +36,7 @@
         "eslint-plugin-import": "^2.26.0",
         "postcss-loader": "^6.1.1",
         "tailwindcss": "^2.2.7",
-        "alpinejs": "^3.9.5",
+        "alpinejs": "^3.9.6",
         "github-markdown-dracula-css": "^4.0.3",
         "jquery": "^3.6.0",
         "nightwind": "^1.1.11",
