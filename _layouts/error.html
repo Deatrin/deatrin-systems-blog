@@ -8,6 +8,5 @@ layout: default
             <span class="{{ line.line.class }}" data-ty="{{ line.line.formatting }}" data-ty-prompt="{{ line.line.bell }}">{{ line.line.message }}</span> {%- endfor -%} {{ page.footer | flatify}}
         </div>
     </div>
-    {%- include ads-horizontal.html -%}
 </main>
 <script src="{%link /assets/js/termynal.js %}" data-termynal-container="#termynal"></script>
