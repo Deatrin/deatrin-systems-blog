@@ -4,14 +4,34 @@ layout: default
 
 {% assign num = page.photos.size %}
 
-<h1>{{ page.title }}</h1>
-<ul>
-  {% for i in (1..num) %}
-  <li>
-    <img src="{{ site.baseurl }}/images/photos/{{ page.photos.set }}/{{ page.photos.set }}-{{ i }}.jpg" alt="Photo {{ i }} from {{ page.photos.set | capitalize }}">
-  </li>
-  {% endfor %}
-</ul>
-<div>
-  <a href="{{ site.baseurl }}/photos/">View All Photo Sets</a>
-</div>
+<main class="-mt-4 md:-mt-64 lg:-mt-72 xl:-mt-80 2xl:-mt-96 4xl:-mt-112">
+  <div class="main-overlay max-w-5xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
+    <div class=" break-normal md:break-word drac-bg-black rounded-lg shadow-2xl px-5 py-6 sm:px-6">
+      <article class="markdown-body drac-text drac-line-height line-numbers">
+        <p class="post-date drac-text drac-text-xs">
+          {%- assign date_format = site.post_date_format | default: "%b %-d, %Y" -%}
+          <font class="drac-text-pink">Published:</font>
+          <font class="drac-text-{{ page.titlecolor | default: site.titlecolor }}"> {{ page.date | date: date_format }}
+          </font>
+          <br/>
+          <font class="drac-text-pink">File under:</font>
+          {%- include catlist.html -%}
+        </p>
+        {% if page.image %}
+        <span>
+          <a href="{{ page.image }}" title="Hero Image"><img src="{{ page.image }}" alt="{{ page.title }}"></a>
+        </span> {% endif %}
+        <dl>
+          {% for i in (1..num) %}
+          <dd>
+            <img src="{{ site.baseurl }}/images/photos/{{ page.photos.set }}/{{ page.photos.set }}-{{ i }}.jpg"
+              alt="Photo {{ i }} from {{ page.photos.set | capitalize }}">
+          </dd>
+          {% endfor %}
+        </dl>
+      </article>
+    </div>
+  </div>
+  {%- include related.html -%} 
+  {%- include utterances.html -%}
+</main>
