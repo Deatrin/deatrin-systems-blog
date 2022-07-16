@@ -13,4 +13,5 @@ group :jekyll_plugins do
   gem "jekyll-redirect-from"
   gem "jekyll-tagging-related_posts"
   gem "jekyll-compose"
+  gem "jekyll-tagging"
 end
