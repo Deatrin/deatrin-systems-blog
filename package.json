@@ -26,7 +26,7 @@
     "devDependencies": {
         "@dracula/dracula-ui": "^0.8.1 ",
         "@duckdoc/termynal": "^1.0.0",
-        "@symfony/webpack-encore": "^2.1.0",
+        "@symfony/webpack-encore": "^3.0.0",
         "@tailwindcss/forms": "^0.5.2",
         "@tailwindcss/typography": "^0.4.1",
         "autoprefixer": "^10.4.7",
