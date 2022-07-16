@@ -28,7 +28,7 @@
         "@duckdoc/termynal": "^1.0.0",
         "@symfony/webpack-encore": "^2.1.0",
         "@tailwindcss/forms": "^0.5.2",
-        "@tailwindcss/typography": "^0.5.3",
+        "@tailwindcss/typography": "^0.5.4",
         "autoprefixer": "^10.4.7",
         "concurrently": "^7.2.2",
         "eslint": "^8.19.0",
